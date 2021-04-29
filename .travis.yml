@@ -19,7 +19,7 @@ after_success:
   # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push them to docker hub
-  - docker push cygnetops/multi-client-10-14
-  - docker push cygnetops/multi-nginx-10-14
-  - docker push cygnetops/multi-server-10-14
-  - docker push cygnetops/multi-worker-10-14
+  - docker push jbsolanki/multi-client-10-14
+  - docker push jbsolanki/multi-nginx-10-14
+  - docker push jbsolanki/multi-server-10-14
+  - docker push jbsolanki/multi-worker-10-14
