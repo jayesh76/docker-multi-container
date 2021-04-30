@@ -10,7 +10,6 @@ before_install:
 script:
   - docker run -e CI=true jbsolanki/react-test npm run test
 
-
 after_success:
   - docker build -t jbsolanki/multi-client-10-14 ./client
   - docker build -t jbsolanki/multi-nginx-10-14 ./nginx
