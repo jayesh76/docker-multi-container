@@ -22,7 +22,7 @@ after_success:
   - docker push jbsolanki/multi-nginx-10-14
   - docker push jbsolanki/multi-server-10-14
   - docker push jbsolanki/multi-worker-10-14
-  
+
 deploy:
   provider: elasticbeanstalk
   region: 'ap-south-1'
@@ -33,6 +33,5 @@ deploy:
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: 
-    secure: $AWS_SECRET_KEY
+  secret_access_key: $AWS_SECRET_KEY
 
